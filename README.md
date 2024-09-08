@@ -2,7 +2,7 @@
 Bem-vindo ao meu portfólio! Este site foi desenvolvido para apresentar alguns dos projetos que eu criei, destacando minhas habilidades e experiência como programador.
 
 # Visão Geral do Portfólio
-Este portfólio foi criado para mostrar meu trabalho de programação de forma organizada e visualmente atraente. Ele inclui alguns projetos que desenvolvi, com descriçõese e links para os repositórios.
+Este portfólio foi criado para mostrar meu trabalho de programação de forma organizada e visualmente atraente. Ele inclui alguns projetos que desenvolvi, com descrições e links para os repositórios.
 
 # Funcionalidades
 - Destaque de Projetos: Uma lista de projetos selecionados, cada um com uma breve descrição e links para os repositórios no GitHub.
