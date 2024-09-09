@@ -99,6 +99,7 @@ nav ul li a:hover {
 }
 
 .about p {
+    font-size: 1.25rem;
     margin: 0 auto;
     width: 80%;
 }
@@ -118,6 +119,7 @@ nav ul li a:hover {
 }
 
 .about-card h3{
+    font-size: 1.25rem;
     color: #8B4513;
 }
 
