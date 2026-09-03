@@ -21,7 +21,7 @@ Este portfólio foi criado para mostrar meu trabalho de programação de forma o
 
 # Projetos em Destaque
 - Aplicativo de Lista de Tarefas (To-Do List): Um aplicativo simples de lista de tarefas que usa Local Storage para persistir os dados entre sessões.
-- Jogo da memória: Um jogo simples onde o usuário vira cartas para tentar combinar pares.
+- Agenda telefonica: Lista telefonica feita em Java usando Swing. Usando JSON para arquivar dados.
 - Calculadora: Uma calculadora simples que realiza operações básicas (soma, subtração, multiplicação, divisão).
 
 # Planos Futuros
