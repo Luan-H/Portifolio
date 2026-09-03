@@ -20,9 +20,9 @@ Este portfólio foi criado para mostrar meu trabalho de programação de forma o
 [Portfólio de Luan Henrique](https://luan-h.github.io/Portfolio/)
 
 # Projetos em Destaque
-- Aplicativo de Lista de Tarefas (To-Do List): Um aplicativo simples de lista de tarefas que usa Local Storage para persistir os dados entre sessões.
+- MultiAgenda: Projeto feito para faculdade, sistema de agendamentos com conexão com banco de dados e login.
 - Agenda telefonica: Lista telefonica feita em Java usando Swing. Usando JSON para arquivar dados.
-- Calculadora: Uma calculadora simples que realiza operações básicas (soma, subtração, multiplicação, divisão).
+- Amor Animal: Projeto feito para uma ONG.
 
 # Planos Futuros
 - Criar um dashboard com todas as informações sobre as linguagens de programação que eu estou aprendendo/aprendi.
