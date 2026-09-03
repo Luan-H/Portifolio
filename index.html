@@ -1,104 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Meu Portifolio</title>
+    <title>Luan Henrique | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="#home">1.Inicio</a></li>
-            <li><a href="#about">2.Sobre</a></li>
-            <li><a href="#projects">3.Projetos</a></li>
-            <li><a href="#contact">4.Contatos</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-md fixed-top custom-navbar" id="mainNavbar">
+        <div class="container py-1">
+            <a class="navbar-brand" href="#home"><span class="navbar-span">&lt;</span>Luan<span class="text-accent"> Henrique</span> <span class="navbar-span">/&gt;</span></a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Abrir menu">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+                <ul class="navbar-nav gap-md-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <img src="foto.jpeg" alt="Foto">
-        <div class="hero-content">
-            <h1>Olá, meu nome é <span class="highlight">Luan Henrique</span></h1>
-            <p>Sou um programador sempre buscando aprender mais e <br>com o desejo de criar
-                soluções que façam a diferença.</p>
-        </div>
-    </section>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center flex-column-reverse flex-md-row g-5">
+                    <div class="col-md-7 text-center text-md-start">
+                        <p class="hero-greeting mb-3">Olá, meu nome é</p>
+                        <h1 class="hero-name mb-3">Luan <span class="text-accent">Henrique</span></h1>
+                        <p class="hero-bio mb-4">
+                            Sou estudante de <strong>Desenvolvimento de Sistemas para Internet</strong> no IFMT. 
+                            Gosto de programar, aprender coisas novas e construir projetos práticos para a web e desktop.
+                        </p>
+                        <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3 mb-4">
+                            <a href="#projects" class="btn btn-main">
+                                Ver Projetos <i class="bi bi-arrow-down-short"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary-custom">
+                                Entrar em Contato
+                            </a>
+                        </div>
+                        <div class="hero-social d-flex justify-content-center justify-content-md-start gap-3 pt-2">
+                            <a href="https://github.com/Luan-H" target="_blank" rel="noopener noreferrer" title="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/luan-henrique-4a1a8123b/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="mailto:luanhenriquehdia@gmail.com" title="E-mail">
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <img src="foto.jpeg" alt="Foto de Luan Henrique" class="hero-avatar img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about-grid">
-            <h2>Sobre mim</h2>
-            <p>Faço faculdade de Desenvolvimento de Sistemas para Internet (DSI) no Instituto Federal de Educação,
-                Ciência e Tecnologia de Mato Grosso - Campus
-                Octayde. Comecei a faculdade com o intuito de trabalhar e viver de programação.
-                Conheci a programação no começo da pandemia (2020), desde então venho sonhado com
-                a possibilidade de trabalhar e viver com isso.
-                Estou tentando aprender cada dia mais sobre o universo da programação.
-                Comecei com HTML, CSS e JavaScript no inicio do ano de 2024, desde então
-                aprendi sobre as linguagens de Python, Java e C, e sobre os frameworks de React, NEXT, Django e Spring.
-            </p>
-        </div>
-        <div class="about-grid2">
-            <div class="about-card">
-                <h3>Formação</h3>
-                <p>
-                    Ensino médio <br> 2018-2020 <br> Colégio da Policia Militar Tiradentes
-                </p>
-            </div>
-            <div class="about-card">
-                <h3>Formação</h3>
-                <p>
-                    Ensino Superior <br> 2024-Atualmente <br> IFMT - Campus Octayde
-                </p>
-            </div>
-        </div>
-    </section>
+        <!-- About Section -->
+        <section id="about" class="section-block">
+            <div class="container">
+                <div class="section-title-wrapper mb-4">
+                    <h2 class="section-heading">Sobre mim</h2>
+                </div>
+                <div class="row g-5 mt-1">
+                    <div class="col-lg-7">
+                        <div class="about-text mb-4">
+                            <p>
+                                Faço faculdade de <strong>Desenvolvimento de Sistemas para Internet (DSI)</strong> no 
+                                Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso (IFMT) - Campus Octayde. 
+                                Comecei a faculdade com o intuito de trabalhar e viver de programação.
+                            </p>
+                            <p>
+                                Conheci a programação no começo da pandemia (2020) e desde então venho sonhando com a possibilidade de trabalhar na área, tentando aprender cada dia mais sobre esse universo.
+                            </p>
+                            <p class="mb-0">
+                                Comecei com HTML, CSS e JavaScript no início de 2024. Desde então venho praticando também com linguagens como Python, Java e C, além de frameworks como React, Next.js, Django e Spring Boot.
+                            </p>
+                        </div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>Projetos</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>To-do list</h3>
-                <p>Uma aplicação simples onde o usuário pode adicionar, editar e excluir tarefas.</p>
-                <a href="https://github.com/Luan-H/To-Do-List" target="_blank">Link para acesso.</a>
-                <img src="to-do.png" alt="Foto do site">
-            </div>
-            <div class="project-card">
-                <h3>Agenda de contatos</h3>
-                <p>Agenda feita em Java com Swing, utilizando um arquivo json para armazenar dados.</p>
-                <a href="https://github.com/Luan-H/ProjetoFinal-Desktop">Link para acesso.</a>
-                <img src="agenda.png" alt="Foto da Agenda">
-            </div>
-            <div class="project-card">
-                <h3>Calculadora</h3>
-                <p>Uma calculadora simples que realiza operações básicas (soma, subtração, multiplicação, divisão).</p>
-                <a href="https://github.com/Luan-H/Calculadora" target="_blank">Link para acesso.</a>
-                <img src="Calculadora.png" alt="Foto do site">
-            </div>
-        </div>
-    </section>
+                        <div class="mt-5">
+                            <h3 class="subsection-title mb-3">Tecnologias que venho utilizando e estudando</h3>
+                            <div class="skills-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Python</span>
+                                <span>Java</span>
+                                <span>C</span>
+                                <span>React</span>
+                                <span>Next.js</span>
+                                <span>Django</span>
+                                <span>Spring Boot</span>
+                                <span>Bootstrap</span>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contatos</h2>
-        <p>E-mail:
-            <a href="mailto:luanhenriquehdia@gmail.com">luanhenriquehdia@gmail.com</a>
-        </p>
-        <p>GitHub:
-            <a href="https://github.com/Luan-H" target="_blank">Meu GitHub</a>
-        </p>
-        <p>Linkedin:
-            <a href="https://www.linkedin.com/in/luan-henrique-4a1a8123b/" target="_blank">Linkedin</a>
-        </p>
-    </section>
+                    <div class="col-lg-5">
+                        <h3 class="subsection-title mb-3">Formação</h3>
+                        <div class="formation-list d-flex flex-column gap-3">
+                            <div class="formation-item">
+                                <span class="formation-period">2024 — Atualmente</span>
+                                <h4 class="formation-title">Ensino Superior</h4>
+                                <p class="formation-place mb-1">IFMT - Campus Octayde</p>
+                                <small class="">Desenvolvimento de Sistemas para Internet</small>
+                            </div>
+                            <div class="formation-item">
+                                <span class="formation-period">2018 — 2020</span>
+                                <h4 class="formation-title">Ensino Médio</h4>
+                                <p class="formation-place mb-0">Colégio da Polícia Militar Tiradentes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section-block section-alt">
+            <div class="container">
+                <div class="section-title-wrapper mb-4">
+                    <h2 class="section-heading">Projetos</h2>
+                    <p class="section-subheading">Alguns dos trabalhos que desenvolvi para estudos e prática.</p>
+                </div>
+
+                <div class="row g-4 g-lg-5 mt-2">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="project-box h-100 d-flex flex-column">
+                            <div class="project-thumb">
+                                <img src="multiagenda.png" alt="MultiAgenda" class="img-fluid">
+                            </div>
+                            <div class="project-content d-flex flex-column flex-grow-1 p-4">
+                                <h3 class="project-name">MultiAgenda</h3>
+                                <p class="project-text flex-grow-1">
+                                    Projeto final de Banco de Dados e Back-End. Sistema de agendamento online utilizando conexão em banco de dados.
+                                </p>
+                                <div class="project-tags mb-4">
+                                    <span>Python</span>
+                                    <span>Django</span>
+                                    <span>PostgreSQL</span>
+                                </div>
+                                <a href="https://github.com/Luan-H/MultiAgenda" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="bi bi-github me-2"></i> Ver no GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="project-box h-100 d-flex flex-column">
+                            <div class="project-thumb">
+                                <img src="agenda.png" alt="Agenda de contatos" class="img-fluid">
+                            </div>
+                            <div class="project-content d-flex flex-column flex-grow-1 p-4">
+                                <h3 class="project-name">Agenda de contatos</h3>
+                                <p class="project-text flex-grow-1">
+                                    Agenda feita em Java com Swing, utilizando um arquivo JSON para armazenar dados.
+                                </p>
+                                <div class="project-tags mb-4">
+                                    <span>Java</span>
+                                    <span>Swing</span>
+                                    <span>JSON</span>
+                                </div>
+                                <a href="https://github.com/Luan-H/ProjetoFinal-Desktop" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="bi bi-github me-2"></i> Ver no GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="project-box h-100 d-flex flex-column">
+                            <div class="project-thumb">
+                                <img src="amoranimal.png" alt="Amor Animal" class="img-fluid">
+                            </div>
+                            <div class="project-content d-flex flex-column flex-grow-1 p-4">
+                                <h3 class="project-name">Amor Animal</h3>
+                                <p class="project-text flex-grow-1">
+                                    Landing page feita para uma ONG na matéria de Oficina de Prática Extensionista 1.
+                                </p>
+                                <div class="project-tags mb-4">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <a href="https://github.com/Luan-H/AmorAnimal" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="bi bi-github me-2"></i> Ver no GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-block">
+            <div class="container">
+                <div class="section-title-wrapper mb-4">
+                    <h2 class="section-heading">Contatos</h2>
+                    <p class="section-subheading">Sinta-se à vontade para entrar em contato comigo por qualquer um dos canais abaixo.</p>
+                </div>
+
+                <div class="row g-4 mt-2">
+                    <div class="col-12 col-md-4">
+                        <a href="mailto:luanhenriquehdia@gmail.com" class="contact-box d-flex align-items-center gap-3">
+                            <i class="bi bi-envelope fs-3"></i>
+                            <div>
+                                <span class="contact-label">E-mail</span>
+                                <p class="contact-value mb-0 text-break">luanhenriquehdia@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="https://github.com/Luan-H" target="_blank" rel="noopener noreferrer" class="contact-box d-flex align-items-center gap-3">
+                            <i class="bi bi-github fs-3"></i>
+                            <div>
+                                <span class="contact-label">GitHub</span>
+                                <p class="contact-value mb-0">github.com/Luan-H</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="https://www.linkedin.com/in/luan-henrique-4a1a8123b/" target="_blank" rel="noopener noreferrer" class="contact-box d-flex align-items-center gap-3">
+                            <i class="bi bi-linkedin fs-3"></i>
+                            <div>
+                                <span class="contact-label">LinkedIn</span>
+                                <p class="contact-value mb-0">Luan Henrique</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="custom-footer py-5">
+        <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+            <span class="footer-text">Luan Henrique &copy; 2026</span>
+            <a href="#home" class="footer-link">Voltar ao topo &uarr;</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 
