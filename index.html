@@ -5,6 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luan Henrique | Portfólio</title>
+    <meta name="description" content="Portfólio de Luan Henrique - Desenvolvedor de Software e Estudante de Sistemas para Internet no IFMT.">
+    <meta name="author" content="Luan Henrique">
+
+    <!-- Open Graph (WhatsApp, LinkedIn, Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luan-h.github.io/Portfolio/">
+    <meta property="og:title" content="Luan Henrique | Desenvolvedor de Software">
+    <meta property="og:description" content="Portfólio com projetos práticos em Django, Java, Flutter, PostgreSQL e Web.">
+    <meta property="og:image" content="https://luan-h.github.io/Portfolio/images/foto.jpeg">
+
+    <!-- Favicon & Fonts -->
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,12 +62,15 @@
                         <p class="hero-greeting mb-3">Olá, meu nome é</p>
                         <h1 class="hero-name mb-3">Luan <span class="text-accent">Henrique</span></h1>
                         <p class="hero-bio mb-4">
-                            Sou estudante de <strong>Desenvolvimento de Sistemas para Internet</strong> no IFMT. 
-                            Gosto de programar, aprender coisas novas e construir projetos práticos para a web e desktop.
+                            Sou estudante do 5º semestre de <strong>Desenvolvimento de Sistemas para Internet</strong> no IFMT (formação em 2027/1). 
+                            Gosto de programar, aprender coisas novas e construir soluções práticas para web, mobile e back-end.
                         </p>
                         <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3 mb-4">
                             <a href="#projects" class="btn btn-main">
                                 Ver Projetos <i class="bi bi-arrow-down-short"></i>
+                            </a>
+                            <a href="Curriculo.pdf" target="_blank" download="Curriculo-Luan-Henrique.pdf" class="btn btn-secondary-custom">
+                                <i class="bi bi-file-earmark-arrow-down me-1"></i>Currículo
                             </a>
                             <a href="#contact" class="btn btn-secondary-custom">
                                 Entrar em Contato
@@ -99,7 +113,7 @@
                                 Conheci a programação no começo da pandemia (2020) e desde então venho sonhando com a possibilidade de trabalhar na área, tentando aprender cada dia mais sobre esse universo.
                             </p>
                             <p class="mb-0">
-                                Comecei com HTML, CSS e JavaScript no início de 2024. Desde então venho praticando também com linguagens como Python, Java e C, além de frameworks como React, Next.js, Django e Spring Boot.
+                                Comecei com HTML, CSS e JavaScript no início de 2024. Desde então venho desenvolvendo projetos práticos com <strong>Python, Java e Dart</strong>, aplicando frameworks e ferramentas como <strong>Django, Flutter, Spring Boot</strong> e bancos de dados relacionais como <strong>PostgreSQL</strong>.
                             </p>
                         </div>
 
@@ -126,10 +140,12 @@
                         <h3 class="subsection-title mb-3">Formação</h3>
                         <div class="formation-list d-flex flex-column gap-3">
                             <div class="formation-item">
-                                <span class="formation-period">2024 — Atualmente</span>
-                                <h4 class="formation-title">Ensino Superior</h4>
-                                <p class="formation-place mb-1">IFMT - Campus Octayde</p>
-                                <small class="">Desenvolvimento de Sistemas para Internet</small>
+                                <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-2">
+                                    <span class="formation-period">2024 — 2027/1 (Previsão)</span>
+                                    <span class="formation-badge">5º Semestre</span>
+                                </div>
+                                <h4 class="formation-title mb-1">Desenvolvimento de Sistemas para Internet</h4>
+                                <p class="formation-place mb-0">IFMT - Campus Octayde <span class="text-secondary-bullet">&bull;</span> Graduação</p>
                             </div>
                             <div class="formation-item">
                                 <span class="formation-period">2018 — 2020</span>
@@ -166,9 +182,12 @@
                                     <span>Django</span>
                                     <span>PostgreSQL</span>
                                 </div>
-                                <a href="https://github.com/Luan-H/MultiAgenda" target="_blank" rel="noopener noreferrer" class="project-link">
-                                    <i class="bi bi-github me-2"></i> Ver no GitHub
-                                </a>
+                                <div class="project-actions d-flex flex-wrap align-items-center justify-content-between gap-2 mt-auto pt-2">
+                                    <a href="https://github.com/Luan-H/MultiAgenda" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <i class="bi bi-github me-1"></i> Ver no GitHub
+                                    </a>
+                                    <span class="project-badge-note">Local / Database</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -188,9 +207,12 @@
                                     <span>Swing</span>
                                     <span>JSON</span>
                                 </div>
-                                <a href="https://github.com/Luan-H/ProjetoFinal-Desktop" target="_blank" rel="noopener noreferrer" class="project-link">
-                                    <i class="bi bi-github me-2"></i> Ver no GitHub
-                                </a>
+                                <div class="project-actions d-flex flex-wrap align-items-center justify-content-between gap-2 mt-auto pt-2">
+                                    <a href="https://github.com/Luan-H/ProjetoFinal-Desktop" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <i class="bi bi-github me-1"></i> Ver no GitHub
+                                    </a>
+                                    <span class="project-badge-note">Desktop / Java</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -210,9 +232,14 @@
                                     <span>CSS</span>
                                     <span>JavaScript</span>
                                 </div>
-                                <a href="https://github.com/Luan-H/AmorAnimal" target="_blank" rel="noopener noreferrer" class="project-link">
-                                    <i class="bi bi-github me-2"></i> Ver no GitHub
-                                </a>
+                                <div class="project-actions d-flex flex-wrap align-items-center gap-3 mt-auto pt-2">
+                                    <a href="https://luan-h.github.io/AmorAnimal/" target="_blank" rel="noopener noreferrer" class="project-link-primary">
+                                        <i class="bi bi-box-arrow-up-right me-1"></i> Acessar Site
+                                    </a>
+                                    <a href="https://github.com/Luan-H/AmorAnimal" target="_blank" rel="noopener noreferrer" class="project-link">
+                                        <i class="bi bi-github me-1"></i> GitHub
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -230,13 +257,19 @@
 
                 <div class="row g-4 mt-2">
                     <div class="col-12 col-md-4">
-                        <a href="mailto:luanhenriquehdia@gmail.com" class="contact-box d-flex align-items-center gap-3">
-                            <i class="bi bi-envelope fs-3"></i>
-                            <div>
-                                <span class="contact-label">E-mail</span>
-                                <p class="contact-value mb-0 text-break">luanhenriquehdia@gmail.com</p>
+                        <div class="contact-box contact-box-email d-flex align-items-center justify-content-between gap-2 position-relative" id="emailContactBox" role="button" tabindex="0" title="Clique para copiar o e-mail">
+                            <div class="d-flex align-items-center gap-3">
+                                <i class="bi bi-envelope fs-3"></i>
+                                <div>
+                                    <span class="contact-label">E-mail (Clique p/ copiar)</span>
+                                    <p class="contact-value mb-0 text-break" id="emailText">luanhenriquehdia@gmail.com</p>
+                                </div>
                             </div>
-                        </a>
+                            <button type="button" class="btn-copy-email" id="btnCopyEmail" aria-label="Copiar e-mail" title="Copiar e-mail">
+                                <i class="bi bi-clipboard" id="copyIcon"></i>
+                            </button>
+                            <span class="copy-tooltip" id="copyTooltip"><i class="bi bi-check2 me-1"></i>Copiado!</span>
+                        </div>
                     </div>
                     <div class="col-12 col-md-4">
                         <a href="https://github.com/Luan-H" target="_blank" rel="noopener noreferrer" class="contact-box d-flex align-items-center gap-3">

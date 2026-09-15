@@ -87,8 +87,8 @@ a:hover {
     box-shadow: none;
 }
 
-.navbar-span{
-    color: (--accent);
+.navbar-span {
+    color: var(--accent);
 }
 
 /* --- Hero Section --- */
@@ -271,20 +271,34 @@ a:hover {
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--accent);
-    display: block;
-    margin-bottom: 0.4rem;
+}
+
+.formation-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--accent);
+    background-color: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    display: inline-block;
 }
 
 .formation-title {
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: var(--text-main);
-    margin-bottom: 0.25rem;
+    font-size: 1.12rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.35;
 }
 
 .formation-place {
     font-size: 0.95rem;
-    color: var(--text-muted);
+    color: #cbd5e1;
+}
+
+.text-secondary-bullet {
+    color: var(--text-soft);
+    margin: 0 4px;
 }
 
 /* --- Projetos --- */
@@ -346,17 +360,43 @@ a:hover {
 }
 
 .project-link {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: var(--text-main);
     display: inline-flex;
     align-items: center;
-    margin-top: auto;
-    padding-top: 0.5rem;
+    transition: color 0.2s ease;
 }
 
 .project-link:hover {
     color: var(--accent);
+}
+
+.project-link-primary {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #0b0c0e;
+    background-color: var(--accent);
+    padding: 0.35rem 0.85rem;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.project-link-primary:hover {
+    background-color: var(--accent-hover);
+    color: #0b0c0e;
+    transform: translateY(-1px);
+}
+
+.project-badge-note {
+    font-size: 0.75rem;
+    color: var(--text-soft);
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
 }
 
 /* --- Contatos --- */
@@ -368,6 +408,52 @@ a:hover {
     color: var(--text-main);
     text-decoration: none;
     transition: all 0.2s ease;
+}
+
+.contact-box-email {
+    cursor: pointer;
+}
+
+.btn-copy-email {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.contact-box-email:hover .btn-copy-email {
+    color: var(--text-main);
+    border-color: var(--border-hover);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.copy-tooltip {
+    position: absolute;
+    top: -10px;
+    right: 14px;
+    background-color: #10b981;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(6px);
+    transition: all 0.2s ease;
+}
+
+.copy-tooltip.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .contact-box:hover {
